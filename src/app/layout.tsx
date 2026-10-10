@@ -8,8 +8,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Trebbol Admin Dashboard",
-  description: "Dashboard de administración para Trebbol",
+  title: "Trebbol — Coming Soon",
+  description: "Trebbol is coming soon. Stay tuned.",
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
