@@ -71,9 +71,10 @@ export default function ComingSoonPage() {
               style={i === 0 ? {} : { opacity: 0 }}
             >
               <h1
-                className="text-white font-bold text-center tracking-tight whitespace-nowrap font-sans"
+                className="text-white font-bold text-center tracking-tight whitespace-nowrap"
                 style={{
                   fontSize: 'clamp(3rem, 10vw, 8rem)',
+                  fontFamily: 'var(--font-inter), Inter, sans-serif',
                   letterSpacing: '-0.02em',
                 }}
               >
