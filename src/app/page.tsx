@@ -90,7 +90,7 @@ export default function ComingSoonPage() {
       <a
         ref={linkRef}
         href="https://www.google.com"
-        className="mt-12 inline-flex items-center gap-2 bg-white text-[#11A5B0] font-semibold text-sm md:text-base px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+        className="mt-12 inline-flex items-center gap-2 bg-white text-[#11A5B0] font-semibold text-sm md:text-base px-6 py-2 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
         style={{ fontFamily: 'var(--font-inter), Inter, sans-serif', opacity: 0 }}
       >
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
