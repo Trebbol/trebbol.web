@@ -8,7 +8,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Trebbol — Coming Soon",
+  title: "Coming Soon",
   description: "Trebbol is coming soon. Stay tuned.",
 }
 
