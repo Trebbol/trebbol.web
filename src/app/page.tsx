@@ -13,15 +13,15 @@ const messages = [
 export default function ComingSoonPage() {
   const containerRef = useRef<HTMLDivElement>(null)
   const marqueeRef = useRef<HTMLDivElement>(null)
-  const subtitleRef = useRef<HTMLParagraphElement>(null)
+  const linkRef = useRef<HTMLAnchorElement>(null)
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Fade in subtitle
+      // Fade in link
       gsap.fromTo(
-        subtitleRef.current,
+        linkRef.current,
         { opacity: 0, y: 20 },
-        { opacity: 1, y: 0, duration: 1, ease: 'power3.out', delay: 0.5 }
+        { opacity: 1, y: 0, duration: 1, ease: 'power3.out', delay: 1 }
       )
 
       // Marquee: cycle through languages
@@ -39,16 +39,16 @@ export default function ComingSoonPage() {
 
         tl.to(items[i], {
           opacity: 0,
-          y: -60,
-          duration: 0.6,
-          ease: 'power2.in',
-        }, `+=2.5`)
+          y: -40,
+          duration: 1.2,
+          ease: 'power1.inOut',
+        }, `+=5`)
 
         tl.fromTo(
           items[next],
-          { opacity: 0, y: 60 },
-          { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' },
-          '-=0.3'
+          { opacity: 0, y: 40 },
+          { opacity: 1, y: 0, duration: 1.2, ease: 'power1.inOut' },
+          '-=0.6'
         )
       }
     })
@@ -86,14 +86,15 @@ export default function ComingSoonPage() {
         </div>
       </div>
 
-      {/* Subtitle */}
-      <p
-        ref={subtitleRef}
-        className="text-white/70 text-lg md:text-xl tracking-[0.3em] uppercase mt-6"
-        style={{ fontFamily: 'var(--font-inter), Inter, sans-serif' }}
+      {/* Back to Google link */}
+      <a
+        ref={linkRef}
+        href="https://www.google.com"
+        className="mt-10 px-8 py-3 border-2 border-white/40 rounded-full text-white/80 text-sm md:text-base tracking-widest uppercase hover:bg-white/10 hover:border-white/70 transition-all duration-300"
+        style={{ fontFamily: 'var(--font-inter), Inter, sans-serif', opacity: 0 }}
       >
-        stay tuned
-      </p>
+        ← Back
+      </a>
     </div>
   )
 }
