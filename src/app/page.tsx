@@ -90,10 +90,13 @@ export default function ComingSoonPage() {
       <a
         ref={linkRef}
         href="https://www.google.com"
-        className="mt-10 px-8 py-3 border-2 border-white/40 rounded-full text-white/80 text-sm md:text-base tracking-widest uppercase hover:bg-white/10 hover:border-white/70 transition-all duration-300"
+        className="mt-12 inline-flex items-center gap-2 bg-white text-[#11A5B0] font-semibold text-sm md:text-base px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
         style={{ fontFamily: 'var(--font-inter), Inter, sans-serif', opacity: 0 }}
       >
-        ← Back
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 12L6 8L10 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+        Go Back
       </a>
     </div>
   )
