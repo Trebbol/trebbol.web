@@ -59,8 +59,7 @@ export default function ComingSoonPage() {
   return (
     <div
       ref={containerRef}
-      className="min-h-screen flex flex-col items-center justify-center"
-      style={{ backgroundColor: '#11A5B0' }}
+      className="min-h-screen flex flex-col items-center justify-center bg-brand-500"
     >
       {/* Marquee container */}
       <div className="relative h-[120px] md:h-[160px] lg:h-[200px] overflow-hidden flex items-center justify-center w-full">
@@ -72,10 +71,9 @@ export default function ComingSoonPage() {
               style={i === 0 ? {} : { opacity: 0 }}
             >
               <h1
-                className="text-white font-bold text-center tracking-tight whitespace-nowrap"
+                className="text-white font-bold text-center tracking-tight whitespace-nowrap font-sans"
                 style={{
                   fontSize: 'clamp(3rem, 10vw, 8rem)',
-                  fontFamily: 'var(--font-inter), Inter, sans-serif',
                   letterSpacing: '-0.02em',
                 }}
               >
@@ -90,8 +88,8 @@ export default function ComingSoonPage() {
       <a
         ref={linkRef}
         href="https://www.google.com"
-        className="mt-12 inline-flex items-center gap-2 bg-white text-[#11A5B0] font-semibold text-sm md:text-base px-10 py-4 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
-        style={{ fontFamily: 'var(--font-inter), Inter, sans-serif', opacity: 0 }}
+        className="mt-12 inline-flex items-center gap-2 bg-white text-brand-500 font-semibold text-sm md:text-base px-10 py-4 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+        style={{ opacity: 0 }}
       >
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M10 12L6 8L10 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

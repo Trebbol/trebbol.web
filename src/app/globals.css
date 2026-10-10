@@ -1,5 +1,30 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: 'Inter', var(--font-inter), sans-serif;
+
+  /* Brand / Primary */
+  --color-brand-50: #E8F8F9;
+  --color-brand-100: #BFEDF0;
+  --color-brand-200: #90DFE6;
+  --color-brand-300: #5DD1DB;
+  --color-brand-400: #2FC5D1;
+  --color-brand-500: #11A5B0;
+  --color-brand-600: #0E8F99;
+  --color-brand-700: #0B7580;
+  --color-brand-800: #085C66;
+  --color-brand-900: #054149;
+  --color-brand-950: #022A30;
+
+  /* Semantic */
+  --color-danger: #D52832;
+  --color-success: #119055;
+  --color-warning: #F27E31;
+  --color-info: #195DEF;
+
+  /* Border Radius */
+  --radius-card: 16px;
+}
 
 * {
   margin: 0;
@@ -11,22 +36,4 @@ html {
   font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-@keyframes pulse-slow {
-  0%, 100% { opacity: 0.1; }
-  50% { opacity: 0.2; }
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-}
-
-.animation-delay-2000 {
-  animation-delay: 2s;
-}
-
-.animate-pulse-slow {
-  animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
