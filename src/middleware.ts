@@ -2,6 +2,14 @@ import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
 
 export async function middleware(request: NextRequest) {
+  const path = request.nextUrl.pathname
+
+  // Rutas públicas que no requieren autenticación
+  const publicPaths = ['/', '/coming-soon']
+  if (publicPaths.includes(path)) {
+    return NextResponse.next()
+  }
+
   let supabaseResponse = NextResponse.next({ request })
 
   const supabase = createServerClient(
@@ -27,7 +35,6 @@ export async function middleware(request: NextRequest) {
 
   const { data: { user } } = await supabase.auth.getUser()
 
-  const path = request.nextUrl.pathname
   const isLoginPage = path === '/login'
   const isDashboard = path.startsWith('/dashboard')
 
