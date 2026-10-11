@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Trebbol Web
 
-## Getting Started
+Ecosistema digital local que conecta **Vecinos, Freelancers y Empresas** en una sola plataforma — marketplace de productos, servicios profesionales, bolsa de empleo, publicidad, reputación y mensajería en tiempo real.
 
-First, run the development server:
+---
+
+## Stack
+
+| Capa | Tecnología |
+|---|---|
+| Framework | Next.js 16.4 · React 19 · TypeScript strict |
+| Estilos | Tailwind CSS v4 (CSS-first `@theme`) |
+| Tipografía | Inter (body) · League Spartan (display) |
+| Iconos | @solar-icons/react (público) · lucide-react (dashboard) |
+| Animaciones | GSAP 3.15 |
+| Backend | Supabase (PostgreSQL · Auth SSR · RLS) |
+| Validación | Zod |
+| Testing | Vitest · React Testing Library |
+| CI/CD | GitHub Actions · Vercel |
+| Package manager | pnpm 10.20 |
+
+---
+
+## Inicio rápido
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Variables de entorno
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Crea `.env.local` con:
 
-## Learn More
+```env
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm dev          # Servidor de desarrollo
+pnpm build        # Build de producción
+pnpm type-check   # TypeScript
+pnpm lint         # ESLint
+pnpm test         # Tests
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Flujo Git
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+feature/* ──→ staging (merge directo)
+                 └──→ main (PR + CI obligatorio)
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`main` tiene branch protection — nunca pushear directo, siempre por PR.
+
+---
+
+## Documentación
+
+| Archivo | Contenido |
+|---|---|
+| [`docs/objetivo.md`](docs/objetivo.md) | Visión del producto, módulos y modelo de negocio |
+| [`docs/architecture.md`](docs/architecture.md) | Arquitectura técnica completa (frontend, backend, DevOps) |
+| [`docs/design-tokens.md`](docs/design-tokens.md) | Tokens de diseño (colores, tipografía, radios) |
+| [`docs/components/button.md`](docs/components/button.md) | Componente Button — variantes, props, ejemplos |
+| [`docs/components/card.md`](docs/components/card.md) | Componente Card — variantes, composición |
+| [`docs/components/badge.md`](docs/components/badge.md) | Componente Badge — variantes semánticas |
+| [`docs/components/container.md`](docs/components/container.md) | Componente Container — tamaños, uso |
+| [`docs/server/auth.md`](docs/server/auth.md) | requireUser, isAdmin, hasProfileType |
+| [`docs/server/dal.md`](docs/server/dal.md) | Data Access Layer — funciones de acceso a datos |
+| [`docs/server/schemas.md`](docs/server/schemas.md) | Schemas Zod — validación de entradas |
+| [`docs/pages/home.md`](docs/pages/home.md) | Página Home / Coming Soon |

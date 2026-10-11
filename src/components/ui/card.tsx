@@ -12,9 +12,30 @@ const variantClasses: Record<Variant, string> = {
 }
 
 interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
+  /** Estilo visual de la tarjeta. @default 'default' */
   variant?: Variant
 }
 
+/**
+ * Contenedor visual tipo tarjeta. Composable con `CardHeader`, `CardTitle` y `CardContent`.
+ *
+ * @example
+ * // Tarjeta estática
+ * <Card>
+ *   <CardHeader><CardTitle>Título</CardTitle></CardHeader>
+ *   <CardContent>Contenido</CardContent>
+ * </Card>
+ *
+ * @example
+ * // Tarjeta interactiva (hover lift)
+ * <Card variant="interactive" onClick={handleClick}>
+ *   <CardTitle>Oferta de trabajo</CardTitle>
+ * </Card>
+ *
+ * @example
+ * // Tarjeta plana para fondos grises
+ * <Card variant="flat">Contenido</Card>
+ */
 export function Card({
   variant = 'default',
   className = '',
@@ -37,6 +58,7 @@ export function Card({
   )
 }
 
+/** Cabecera de tarjeta con espaciado inferior. Úsalo para agrupar título y metadatos. */
 export function CardHeader({
   className = '',
   children,
@@ -52,6 +74,7 @@ export function CardHeader({
   )
 }
 
+/** Título de tarjeta. Renderiza un `<h3>` semántico. */
 export function CardTitle({
   className = '',
   children,
@@ -67,6 +90,7 @@ export function CardTitle({
   )
 }
 
+/** Cuerpo de texto de la tarjeta. Aplica estilos de texto secundario. */
 export function CardContent({
   className = '',
   children,
