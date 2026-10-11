@@ -10,10 +10,14 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next()
   }
 
-  // Si faltan las variables de Supabase, no bloquear la navegación
+  // Si faltan las variables de Supabase, bloquear acceso a rutas protegidas
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
   const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
   if (!supabaseUrl || !supabaseAnonKey) {
+    const isDashboard = path.startsWith('/dashboard')
+    if (isDashboard) {
+      return NextResponse.redirect(new URL('/login', request.url))
+    }
     return NextResponse.next()
   }
 
