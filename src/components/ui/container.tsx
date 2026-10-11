@@ -11,9 +11,30 @@ const sizeClasses: Record<Size, string> = {
 }
 
 interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
+  /**
+   * Ancho máximo del contenedor.
+   * - `sm` → 672px · `md` → 896px · `lg` → 1024px · `xl` → 1280px · `full` → sin límite
+   * @default 'xl'
+   */
   size?: Size
 }
 
+/**
+ * Contenedor centrado con padding horizontal responsivo.
+ * Úsalo para envolver el contenido principal de cada sección o página.
+ *
+ * @example
+ * // Sección con ancho estándar
+ * <Container>
+ *   <h2>Título de sección</h2>
+ * </Container>
+ *
+ * @example
+ * // Contenido de texto más estrecho
+ * <Container size="md">
+ *   <p>Descripción larga...</p>
+ * </Container>
+ */
 export function Container({
   size = 'xl',
   className = '',
