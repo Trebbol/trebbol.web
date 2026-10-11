@@ -1,8 +1,17 @@
 import type { Metadata } from 'next'
 
+const isProduction = process.env.VERCEL_ENV === 'production'
+
 export const metadata: Metadata = {
-  title: 'Trebbol',
-  description: 'Trebbol — ecosistema digital local.',
+  title: 'Coming Soon',
+  description: 'Coming Soon.',
+  ...(isProduction && {
+    robots: {
+      index: false,
+      follow: false,
+      googleBot: { index: false, follow: false },
+    },
+  }),
 }
 
 // Layout raíz mínimo — las rutas con locale usan src/app/[locale]/layout.tsx.

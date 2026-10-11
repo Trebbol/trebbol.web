@@ -11,9 +11,18 @@ const inter = Inter({
   subsets: ['latin'],
 })
 
+const isProduction = process.env.VERCEL_ENV === 'production'
+
 export const metadata: Metadata = {
-  title: 'Trebbol',
-  description: 'Trebbol — ecosistema digital local.',
+  title: 'Coming Soon',
+  description: 'Coming Soon.',
+  ...(isProduction && {
+    robots: {
+      index: false,
+      follow: false,
+      googleBot: { index: false, follow: false },
+    },
+  }),
 }
 
 export default async function LocaleLayout({
@@ -33,7 +42,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={inter.variable}>
-      <body className="min-h-screen bg-white text-gray-900">
+      <body className="min-h-screen bg-[var(--color-dark-surface)] text-gray-900">
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

@@ -1,4 +1,44 @@
 {
+  "public": {
+    "nav": {
+      "personal": "Particuliers",
+      "business": "Entreprises",
+      "company": "Corporatif",
+      "login": "Se connecter",
+      "signup": "S'inscrire"
+    },
+    "footer": {
+      "region": "🇧🇪 Belgique",
+      "websiteTerms": "Conditions du site",
+      "legalAgreements": "Accords légaux",
+      "complaints": "Réclamations",
+      "privacyLink": "Confidentialité",
+      "dataPrivacy": "Déclaration de confidentialité pour les candidats",
+      "copyright": "© {year} Trebbol. Tous droits réservés.",
+      "legal1": "Trebbol est une plateforme de marché numérique qui connecte voisins, freelances et entreprises dans les communautés locales. Trebbol n'est pas un établissement financier. Les services de paiement sont fournis par des prestataires tiers agréés. Trebbol B.V. — Enregistrée en Belgique.",
+      "legal2": "Les services et fonctionnalités de Trebbol peuvent varier selon les régions. Certains produits peuvent ne pas être disponibles dans toutes les zones.",
+      "col1Title": "Marketplace",
+      "col1Link1": "Acheter des produits",
+      "col1Link2": "Vendre des produits",
+      "col1Link3": "Parcourir les services",
+      "col1Link4": "Publier un service",
+      "col2Title": "Emplois",
+      "col2Link1": "Parcourir les offres",
+      "col2Link2": "Publier une offre",
+      "col2Link3": "Pour les entreprises",
+      "col2Link4": "Pour les freelances",
+      "col3Title": "Villes",
+      "col3Link1": "Trebbol Bruxelles",
+      "col3Link2": "Trebbol Anvers",
+      "col3Link3": "Trebbol Gand",
+      "col3Link4": "Trebbol Liège",
+      "col4Title": "Entreprise",
+      "col4Link1": "À propos de Trebbol",
+      "col4Link2": "Blog",
+      "col4Link3": "Carrières",
+      "col4Link4": "Presse"
+    }
+  },
   "auth": {
     "title": "Bon retour",
     "subtitle": "Connectez-vous \u00e0 votre compte Trebbol",
@@ -44,5 +84,99 @@
     "successSubtitle": "Nous avons envoy\u00e9 un lien \u00e0 {email}. V\u00e9rifiez aussi vos spams.",
     "errorGeneric": "Nous n\u2019avons pas pu envoyer l\u2019e-mail. R\u00e9essayez.",
     "privacyPolicy": "Politique de confidentialit\u00e9"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Page introuvable",
+    "text": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "back": "Retour à l'accueil"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Confidentialit\u00e9 \u2014 Trebbol",
+      "description": "Chez Trebbol, il est important pour nous que vous ayez des choix et un contr\u00f4le sur la fa\u00e7on dont nous g\u00e9rons vos donn\u00e9es personnelles."
+    },
+    "nav": {
+      "personal": "Particuliers",
+      "business": "Entreprises",
+      "company": "Corporatif",
+      "login": "Se connecter",
+      "signup": "S\u2019inscrire"
+    },
+    "hero": {
+      "title": "Confidentialit\u00e9 chez Trebbol",
+      "subtitle": "Chez Trebbol, il est important pour nous que vous ayez des choix et un contr\u00f4le sur la fa\u00e7on dont nous g\u00e9rons vos donn\u00e9es personnelles. Tous nos produits sont soigneusement examin\u00e9s par notre \u00e9quipe de confidentialit\u00e9 avant le lancement, afin que vous puissiez vous attendre \u00e0 une confidentialit\u00e9 d\u00e8s la conception."
+    },
+    "group1": "Votre confidentialit\u00e9 nous tient \u00e0 c\u0153ur",
+    "group2": "Notre engagement envers vous",
+    "yourData": {
+      "title": "Vos donn\u00e9es",
+      "text": "Vos donn\u00e9es personnelles vous appartiennent et vous avez le droit de comprendre et de contr\u00f4ler comment elles sont utilis\u00e9es."
+    },
+    "yourRights": {
+      "title": "Vos droits",
+      "text": "Si vous souhaitez exercer vos droits sur vos donn\u00e9es personnelles, vous pouvez nous contacter \u00e0 tout moment \u00e0 <email>privacy@trebbol.com</email>."
+    },
+    "keepingInLoop": {
+      "title": "Vous tenir inform\u00e9",
+      "text": "Si vous partagez des donn\u00e9es avec nous, nous vous ferons savoir exactement comment nous les utilisons. Nous expliquerons comment nous collectons et utilisons vos donn\u00e9es dans nos avis de confidentialit\u00e9, afin que vous sachiez ce qui se passe."
+    },
+    "rightToChoose": {
+      "title": "Vous donner le droit de choisir",
+      "text": "Nous vous offrons des choix clairs et des outils simples pour exercer vos droits. Si nous collectons des donn\u00e9es, nous vous dirons pourquoi. Ajustez vos pr\u00e9f\u00e9rences \u00e0 tout moment depuis la section \u2018S\u00e9curit\u00e9 et confidentialit\u00e9\u2019 dans l\u2019application."
+    },
+    "protectingData": {
+      "title": "Prot\u00e9ger vos donn\u00e9es",
+      "text": "Nos syst\u00e8mes de s\u00e9curit\u00e9 surveillent votre compte 24h/24 et 7j/7 pour d\u00e9tecter toute activit\u00e9 suspecte et prot\u00e9ger vos informations. Notre \u00e9quipe d\u2019assistance est toujours disponible si vous avez besoin d\u2019aide."
+    },
+    "customersFirst": {
+      "title": "Nos clients avant tout",
+      "text": "Lorsque nous collectons et utilisons vos donn\u00e9es, c\u2019est uniquement pour nous aider \u00e0 fournir des services exceptionnels et am\u00e9liorer votre exp\u00e9rience."
+    },
+    "notices": {
+      "title": "Nos avis de confidentialit\u00e9 complets",
+      "personalSubtitle": "Avis de confidentialit\u00e9 pour les utilisateurs particuliers",
+      "card1": "Avis de confidentialit\u00e9 pour les clients avec un compte personnel",
+      "card2": "Avis de confidentialit\u00e9 Trebbol pour les moins de 18 ans",
+      "businessSubtitle": "Avis de confidentialit\u00e9 Trebbol Business",
+      "card3": "Avis de confidentialit\u00e9 pour les clients Trebbol Business",
+      "card4": "Avis de confidentialit\u00e9 pour les clients potentiels"
+    },
+    "closing": {
+      "line1": "Nous voulons construire un meilleur \u00e9cosyst\u00e8me num\u00e9rique avec vous aux commandes, et respecter votre vie priv\u00e9e fait partie int\u00e9grante de cet objectif.",
+      "line2": "Nous travaillons toujours \u00e0 nous am\u00e9liorer, donc si vous remarquez quelque chose qui ne r\u00e9pond pas \u00e0 vos attentes en mati\u00e8re de confidentialit\u00e9, faites-le nous savoir.",
+      "line3": "Notre sympathique \u00e9quipe de confidentialit\u00e9 \u00e0 <email>privacy@trebbol.com</email> s\u2019assurera que votre voix soit entendue."
+    },
+    "footer": {
+      "region": "\ud83c\udde7\ud83c\uddea Belgique",
+      "websiteTerms": "Conditions du site",
+      "legalAgreements": "Accords l\u00e9gaux",
+      "complaints": "R\u00e9clamations",
+      "privacyLink": "Confidentialit\u00e9",
+      "dataPrivacy": "D\u00e9claration de confidentialit\u00e9 pour les candidats",
+      "copyright": "\u00a9 {year} Trebbol. Tous droits r\u00e9serv\u00e9s.",
+      "legal1": "Trebbol est une plateforme de march\u00e9 num\u00e9rique qui connecte voisins, freelances et entreprises dans les communaut\u00e9s locales. Trebbol n\u2019est pas un \u00e9tablissement financier. Les services de paiement sont fournis par des prestataires tiers agr\u00e9\u00e9s. Trebbol B.V. \u2014 Enregistr\u00e9e en Belgique.",
+      "legal2": "Les services et fonctionnalit\u00e9s de Trebbol peuvent varier selon les r\u00e9gions. Certains produits peuvent ne pas \u00eatre disponibles dans toutes les zones.",
+      "col1Title": "Marketplace",
+      "col1Link1": "Acheter des produits",
+      "col1Link2": "Vendre des produits",
+      "col1Link3": "Parcourir les services",
+      "col1Link4": "Publier un service",
+      "col2Title": "Emplois",
+      "col2Link1": "Parcourir les offres",
+      "col2Link2": "Publier une offre",
+      "col2Link3": "Pour les entreprises",
+      "col2Link4": "Pour les freelances",
+      "col3Title": "Villes",
+      "col3Link1": "Trebbol Bruxelles",
+      "col3Link2": "Trebbol Anvers",
+      "col3Link3": "Trebbol Gand",
+      "col3Link4": "Trebbol Li\u00e8ge",
+      "col4Title": "Entreprise",
+      "col4Link1": "\u00c0 propos de Trebbol",
+      "col4Link2": "Blog",
+      "col4Link3": "Carri\u00e8res",
+      "col4Link4": "Presse"
+    }
   }
 }

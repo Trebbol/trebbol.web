@@ -1,63 +1,83 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import gsap from 'gsap'
-import { AltArrowLeftLinearIcon } from '@solar-icons/react'
 
-const messages = [
-  { lang: 'EN', text: 'Coming Soon' },
-  { lang: 'ES', text: 'Próximamente' },
-  { lang: 'FR', text: 'Bientôt disponible' },
-  { lang: 'NL', text: 'Binnenkort' },
+const TITLES = [
+  'Coming Soon',
+  'Próximamente',
+  'Bientôt disponible',
+  'Binnenkort',
 ]
 
+const TYPE_SPEED = 80
+const DELETE_SPEED = 40
+const PAUSE_AFTER_TYPE = 2200
+const PAUSE_AFTER_DELETE = 400
+
 export default function ComingSoonPage() {
-  const marqueeRef = useRef<HTMLDivElement>(null)
+  const [displayed, setDisplayed] = useState('')
+  const [isDeleting, setIsDeleting] = useState(false)
+  const [index, setIndex] = useState(0)
+
+  const mainRef = useRef<HTMLElement>(null)
   const ctaRef = useRef<HTMLAnchorElement>(null)
 
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
+        mainRef.current,
+        { opacity: 0, y: 24 },
+        { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' }
+      )
+      gsap.fromTo(
         ctaRef.current,
         { opacity: 0, y: 20 },
-        { opacity: 1, y: 0, duration: 1, ease: 'power3.out', delay: 1 }
+        { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out', delay: 0.4 }
       )
-
-      const items = marqueeRef.current?.querySelectorAll('.marquee-item')
-      if (!items?.length) return
-
-      gsap.set(items, { opacity: 0, y: 60 })
-      gsap.set(items[0], { opacity: 1, y: 0 })
-
-      const tl = gsap.timeline({ repeat: -1 })
-
-      for (let i = 0; i < items.length; i++) {
-        const next = (i + 1) % items.length
-        tl.to(items[i], { opacity: 0, y: -40, duration: 1.2, ease: 'power1.inOut' }, '+=5')
-        tl.fromTo(items[next], { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 1.2, ease: 'power1.inOut' }, '-=0.6')
-      }
     })
-
     return () => ctx.revert()
   }, [])
 
+  useEffect(() => {
+    const fullText = TITLES[index]
+
+    if (!isDeleting && displayed === fullText) {
+      const t = setTimeout(() => setIsDeleting(true), PAUSE_AFTER_TYPE)
+      return () => clearTimeout(t)
+    }
+
+    if (isDeleting && displayed === '') {
+      const t = setTimeout(() => {
+        setIndex(i => (i + 1) % TITLES.length)
+        setIsDeleting(false)
+      }, PAUSE_AFTER_DELETE)
+      return () => clearTimeout(t)
+    }
+
+    const speed = isDeleting ? DELETE_SPEED : TYPE_SPEED
+    const t = setTimeout(() => {
+      setDisplayed(prev =>
+        isDeleting ? prev.slice(0, -1) : fullText.slice(0, prev.length + 1)
+      )
+    }, speed)
+
+    return () => clearTimeout(t)
+  }, [displayed, isDeleting, index])
+
   return (
-    <main className="coming-soon-page">
-      <div className="coming-soon-marquee" ref={marqueeRef}>
-        {messages.map((msg) => (
-          <div key={msg.lang} className="marquee-item">
-            <h1 className="display-1 uppercase font-bold">{msg.text}</h1>
-          </div>
-        ))}
-      </div>
+    <main className="coming-soon-page" ref={mainRef} style={{ opacity: 0 }}>
+      <h1 className="display-1">
+        {displayed}
+        <span className="coming-soon__cursor" aria-hidden="true" />
+      </h1>
 
       <a
         ref={ctaRef}
         href="https://www.google.com"
-        className="btn-white coming-soon-cta"
+        className="btn-primary coming-soon-cta"
         style={{ opacity: 0 }}
       >
-        <AltArrowLeftLinearIcon size={18} aria-hidden="true" />
         Go Back
       </a>
     </main>

@@ -1,203 +1,202 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import { Link } from '@/i18n/navigation'
+import { getTranslations } from 'next-intl/server'
+import type { ReactNode } from 'react'
+import { PublicHeader } from '@/components/layout/PublicHeader'
+import { PublicFooter } from '@/components/layout/PublicFooter'
 
-export const metadata: Metadata = {
-  title: 'Política de privacidad — Trebbol',
-  description: 'Cómo Trebbol recopila, usa y protege tu información personal.',
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('privacy.meta')
+  return {
+    title: t('title'),
+    description: t('description'),
+  }
 }
 
-export default function PrivacyPage() {
+
+function IconArrow() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M5 12h14M12 5l7 7-7 7" />
+    </svg>
+  )
+}
+
+const emailLink = (chunks: ReactNode) => (
+  <a href="mailto:privacy@trebbol.com" className="priv-closing__link">{chunks}</a>
+)
+
+export default async function PrivacyPage() {
+  const t = await getTranslations('privacy')
+
   return (
     <div className="privacy-page">
 
-      {/* ── Header ── */}
-      <header className="privacy-header">
-        <Link href="/" className="privacy-logo">
-          <Image src="/logotipo.svg" alt="Trebbol" width={28} height={28} />
-          <span>Trebbol</span>
-        </Link>
-      </header>
+      <PublicHeader />
 
-      {/* ── Hero ── */}
-      <section className="privacy-hero">
-        <p className="privacy-hero__eyebrow">Privacidad</p>
-        <h1 className="privacy-hero__title">Tu privacidad,<br />nuestra prioridad</h1>
-        <p className="privacy-hero__subtitle">
-          En Trebbol creemos que tus datos te pertenecen. Esta política explica
-          qué información recopilamos, por qué la necesitamos y cómo la protegemos —
-          en un lenguaje que cualquier persona pueda entender.
-        </p>
-        <p className="privacy-hero__date">Última actualización: octubre 2026</p>
+      {/* ══ Hero ══ */}
+      <section className="priv-hero">
+        <h1 className="priv-hero__title">{t('hero.title')}</h1>
+        <p className="priv-hero__subtitle">{t('hero.subtitle')}</p>
       </section>
 
-      {/* ── Pilares ── */}
-      <section className="privacy-pillars">
-        <div className="privacy-pillar">
-          <div className="privacy-pillar__icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </div>
-          <h2 className="privacy-pillar__title">Tus datos, tus reglas</h2>
-          <p className="privacy-pillar__text">
-            Tu información personal te pertenece. Puedes acceder a ella, corregirla
-            o eliminarla en cualquier momento desde tu perfil.
-          </p>
-        </div>
-
-        <div className="privacy-pillar">
-          <div className="privacy-pillar__icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </div>
-          <h2 className="privacy-pillar__title">Seguridad continua</h2>
-          <p className="privacy-pillar__text">
-            Cifrado en tránsito y en reposo, monitoreo 24/7 y revisiones de seguridad
-            periódicas para mantener tu cuenta protegida.
-          </p>
-        </div>
-
-        <div className="privacy-pillar">
-          <div className="privacy-pillar__icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1.75"/>
-              <path d="M12 8v4l3 3" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round"/>
-            </svg>
-          </div>
-          <h2 className="privacy-pillar__title">Transparencia total</h2>
-          <p className="privacy-pillar__text">
-            Te avisamos antes de cualquier cambio importante. Sin sorpresas,
-            sin letra pequeña escondida.
-          </p>
-        </div>
-
-        <div className="privacy-pillar">
-          <div className="privacy-pillar__icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round"/>
-              <circle cx="9" cy="7" r="4" stroke="currentColor" strokeWidth="1.75"/>
-              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round"/>
-            </svg>
-          </div>
-          <h2 className="privacy-pillar__title">Sin venta de datos</h2>
-          <p className="privacy-pillar__text">
-            Nunca vendemos tu información a terceros. Tus datos solo se usan
-            para hacer funcionar y mejorar Trebbol.
-          </p>
-        </div>
-      </section>
-
-      {/* ── Secciones detalladas ── */}
-      <div className="privacy-content">
-
-        <article className="privacy-section">
-          <h2 className="privacy-section__title">1. Qué información recopilamos</h2>
-          <p className="privacy-section__text">
-            Para ofrecerte los servicios de Trebbol recopilamos la información que tú nos proporcionas
-            directamente al crear tu cuenta o usar la plataforma:
-          </p>
-          <ul className="privacy-list">
-            <li><strong>Datos de cuenta:</strong> nombre, correo electrónico y contraseña.</li>
-            <li><strong>Datos de perfil:</strong> foto, descripción, ubicación aproximada y tipo de usuario (Vecino, Freelancer o Empresa).</li>
-            <li><strong>Contenido que publicas:</strong> anuncios de productos, servicios, ofertas de empleo y mensajes.</li>
-            <li><strong>Datos de uso:</strong> páginas visitadas, búsquedas realizadas e interacciones dentro de la app para mejorar la experiencia.</li>
-            <li><strong>Datos de pago:</strong> procesados de forma segura a través de proveedores certificados PCI-DSS. No almacenamos números de tarjeta.</li>
-          </ul>
-        </article>
-
-        <article className="privacy-section">
-          <h2 className="privacy-section__title">2. Para qué usamos tu información</h2>
-          <ul className="privacy-list">
-            <li>Crear y gestionar tu cuenta en Trebbol.</li>
-            <li>Conectarte con vecinos, freelancers y empresas de tu comunidad.</li>
-            <li>Procesar pagos y gestionar transacciones dentro de la plataforma.</li>
-            <li>Enviarte notificaciones relevantes sobre tu actividad (nuevos mensajes, ofertas, actualizaciones).</li>
-            <li>Detectar y prevenir fraudes, spam o comportamientos abusivos.</li>
-            <li>Mejorar y personalizar la experiencia de uso.</li>
-          </ul>
-        </article>
-
-        <article className="privacy-section">
-          <h2 className="privacy-section__title">3. Con quién compartimos tu información</h2>
-          <p className="privacy-section__text">
-            <strong>No vendemos tus datos.</strong> Solo los compartimos en los siguientes casos:
-          </p>
-          <ul className="privacy-list">
-            <li><strong>Con otros usuarios:</strong> tu perfil público es visible para quienes visiten tu anuncio o inicien una conversación contigo.</li>
-            <li><strong>Con proveedores de servicio:</strong> empresas que nos ayudan a operar la plataforma (alojamiento, pagos, correo), bajo acuerdos estrictos de confidencialidad.</li>
-            <li><strong>Por obligación legal:</strong> cuando la ley nos lo exija o para proteger los derechos de Trebbol o sus usuarios.</li>
-          </ul>
-        </article>
-
-        <article className="privacy-section">
-          <h2 className="privacy-section__title">4. Tus derechos</h2>
-          <p className="privacy-section__text">
-            Conforme al RGPD y la legislación aplicable, tienes derecho a:
-          </p>
-          <ul className="privacy-list">
-            <li><strong>Acceso:</strong> solicitar una copia de tus datos personales.</li>
-            <li><strong>Rectificación:</strong> corregir información incorrecta o incompleta.</li>
-            <li><strong>Supresión:</strong> eliminar tu cuenta y los datos asociados.</li>
-            <li><strong>Portabilidad:</strong> exportar tus datos en formato estándar.</li>
-            <li><strong>Oposición:</strong> oponerte al tratamiento de tus datos para fines de marketing.</li>
-          </ul>
-          <p className="privacy-section__text" style={{ marginTop: '1rem' }}>
-            Para ejercer cualquiera de estos derechos, escríbenos a{' '}
-            <a href="mailto:privacidad@trebbol.app" className="privacy-link">privacidad@trebbol.app</a>.
-            Responderemos en un plazo máximo de 30 días.
-          </p>
-        </article>
-
-        <article className="privacy-section">
-          <h2 className="privacy-section__title">5. Cookies y tecnologías similares</h2>
-          <p className="privacy-section__text">
-            Usamos cookies esenciales para mantener tu sesión activa y cookies analíticas
-            (anonimizadas) para entender cómo se usa la plataforma. Puedes gestionar tus
-            preferencias de cookies desde la configuración de tu navegador.
-          </p>
-        </article>
-
-        <article className="privacy-section">
-          <h2 className="privacy-section__title">6. Retención de datos</h2>
-          <p className="privacy-section__text">
-            Conservamos tus datos mientras tu cuenta esté activa o según sea necesario para
-            prestarte el servicio. Cuando elimines tu cuenta, borraremos o anonimizaremos
-            tus datos personales en un plazo de 30 días, salvo que la ley nos obligue a
-            conservarlos por más tiempo.
-          </p>
-        </article>
-
-        <article className="privacy-section">
-          <h2 className="privacy-section__title">7. Cambios en esta política</h2>
-          <p className="privacy-section__text">
-            Si realizamos cambios significativos, te lo notificaremos por correo electrónico
-            o mediante un aviso destacado en la app al menos 30 días antes de que entren
-            en vigor. El uso continuado de Trebbol tras esa fecha implica la aceptación
-            de la nueva versión.
-          </p>
-        </article>
-
-        <article className="privacy-section">
-          <h2 className="privacy-section__title">8. Contacto</h2>
-          <p className="privacy-section__text">
-            Si tienes preguntas sobre esta política o sobre cómo tratamos tus datos,
-            puedes contactarnos en:
-          </p>
-          <ul className="privacy-list">
-            <li>Email: <a href="mailto:privacidad@trebbol.app" className="privacy-link">privacidad@trebbol.app</a></li>
-            <li>Trebbol B.V. — Países Bajos</li>
-          </ul>
-        </article>
-
+      {/* ══ Group 1 ══ */}
+      <div className="priv-group">
+        <p className="priv-group__title">{t('group1')}</p>
       </div>
 
-      {/* ── Footer ── */}
-      <footer className="privacy-footer">
-        <p>© {new Date().getFullYear()} Trebbol. Todos los derechos reservados.</p>
-        <Link href="/login" className="privacy-footer__link">Iniciar sesión</Link>
-      </footer>
+      {/* Your data — image left */}
+      <div className="priv-split">
+        <div className="priv-split__img">
+          <Image
+            src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+            alt="People working together"
+            fill
+            style={{ objectFit: 'cover' }}
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        </div>
+        <div className="priv-split__content">
+          <h2 className="priv-split__title">{t('yourData.title')}</h2>
+          <p className="priv-split__text">{t('yourData.text')}</p>
+        </div>
+      </div>
+
+      {/* Your rights — content left */}
+      <div className="priv-split">
+        <div className="priv-split__content">
+          <h2 className="priv-split__title">{t('yourRights.title')}</h2>
+          <p className="priv-split__text">
+            {t.rich('yourRights.text', { email: emailLink })}
+          </p>
+        </div>
+        <div className="priv-split__img">
+          <Image
+            src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+            alt="People sharing a moment"
+            fill
+            style={{ objectFit: 'cover' }}
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        </div>
+      </div>
+
+      {/* ══ Group 2 ══ */}
+      <div className="priv-group">
+        <p className="priv-group__title">{t('group2')}</p>
+      </div>
+
+      {/* Keeping in loop — image left */}
+      <div className="priv-split">
+        <div className="priv-split__img">
+          <Image
+            src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+            alt="Team collaboration"
+            fill
+            style={{ objectFit: 'cover' }}
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        </div>
+        <div className="priv-split__content">
+          <h2 className="priv-split__title">{t('keepingInLoop.title')}</h2>
+          <p className="priv-split__text">{t('keepingInLoop.text')}</p>
+        </div>
+      </div>
+
+      {/* Right to choose — content left */}
+      <div className="priv-split">
+        <div className="priv-split__content">
+          <h2 className="priv-split__title">{t('rightToChoose.title')}</h2>
+          <p className="priv-split__text">{t('rightToChoose.text')}</p>
+        </div>
+        <div className="priv-split__img">
+          <Image
+            src="https://images.pexels.com/photos/4492126/pexels-photo-4492126.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+            alt="Privacy settings on phone"
+            fill
+            style={{ objectFit: 'cover' }}
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        </div>
+      </div>
+
+      {/* Protecting data — image left */}
+      <div className="priv-split">
+        <div className="priv-split__img">
+          <Image
+            src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+            alt="Person using a smartphone"
+            fill
+            style={{ objectFit: 'cover' }}
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        </div>
+        <div className="priv-split__content">
+          <h2 className="priv-split__title">{t('protectingData.title')}</h2>
+          <p className="priv-split__text">{t('protectingData.text')}</p>
+        </div>
+      </div>
+
+      {/* Customers first — content left */}
+      <div className="priv-split">
+        <div className="priv-split__content">
+          <h2 className="priv-split__title">{t('customersFirst.title')}</h2>
+          <p className="priv-split__text">{t('customersFirst.text')}</p>
+        </div>
+        <div className="priv-split__img">
+          <Image
+            src="https://images.pexels.com/photos/3756681/pexels-photo-3756681.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+            alt="Customer enjoying the service"
+            fill
+            style={{ objectFit: 'cover' }}
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        </div>
+      </div>
+
+      {/* ══ Notices ══ */}
+      <section className="priv-notices">
+        <h2 className="priv-notices__title">{t('notices.title')}</h2>
+
+        <div className="priv-notices__section">
+          <p className="priv-notices__subtitle">{t('notices.personalSubtitle')}</p>
+          <div className="priv-notices__grid">
+            <a href="#" className="priv-notice-card">
+              <span>{t('notices.card1')}</span>
+              <span className="priv-notice-card__arrow"><IconArrow /></span>
+            </a>
+            <a href="#" className="priv-notice-card">
+              <span>{t('notices.card2')}</span>
+              <span className="priv-notice-card__arrow"><IconArrow /></span>
+            </a>
+          </div>
+        </div>
+
+        <div className="priv-notices__section">
+          <p className="priv-notices__subtitle">{t('notices.businessSubtitle')}</p>
+          <div className="priv-notices__grid">
+            <a href="#" className="priv-notice-card">
+              <span>{t('notices.card3')}</span>
+              <span className="priv-notice-card__arrow"><IconArrow /></span>
+            </a>
+            <a href="#" className="priv-notice-card">
+              <span>{t('notices.card4')}</span>
+              <span className="priv-notice-card__arrow"><IconArrow /></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ══ Closing ══ */}
+      <div className="priv-closing">
+        <p className="priv-closing__text">{t('closing.line1')}</p>
+        <p className="priv-closing__text">{t('closing.line2')}</p>
+        <p className="priv-closing__text">
+          {t.rich('closing.line3', { email: emailLink })}
+        </p>
+      </div>
+
+      <PublicFooter />
 
     </div>
   )

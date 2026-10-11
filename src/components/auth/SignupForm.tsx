@@ -2,8 +2,9 @@
 
 import * as React from 'react'
 import Image from 'next/image'
-import { useTransition } from 'react'
+import { useRef, useEffect, useTransition } from 'react'
 import { useTranslations } from 'next-intl'
+import gsap from 'gsap'
 import { signUpAction } from '@/server/actions/auth'
 import { Link } from '@/i18n/navigation'
 
@@ -41,6 +42,18 @@ export function SignupForm() {
   const [isPending, startTransition] = useTransition()
   const [error, setError] = React.useState<string | undefined>(undefined)
   const [success, setSuccess] = React.useState(false)
+  const sectionRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        '.auth-form-section > *',
+        { opacity: 0, y: 16 },
+        { opacity: 1, y: 0, duration: 0.5, ease: 'power3.out', stagger: 0.07, delay: 0.15 }
+      )
+    }, sectionRef)
+    return () => ctx.revert()
+  }, [])
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -60,7 +73,7 @@ export function SignupForm() {
     <div className="auth-layout">
 
       {/* ── Columna izquierda: formulario ── */}
-      <section className="auth-form-section">
+      <section className="auth-form-section" ref={sectionRef}>
         <h1 className="auth-title">{t('title')}</h1>
         <p className="auth-subtitle">{t('subtitle')}</p>
 
