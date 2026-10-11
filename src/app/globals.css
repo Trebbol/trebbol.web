@@ -2,6 +2,7 @@
 
 @theme {
   --font-sans: 'Inter', var(--font-inter), sans-serif;
+  --font-display: 'Noto Sans', var(--font-noto-sans), sans-serif;
 
   /* Brand */
   --color-brand-50: #E8F8F9;
@@ -67,6 +68,70 @@ html {
   font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== Coming Soon ===== */
+.coming-soon-page {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-brand-500);
+}
+
+.coming-soon-marquee {
+  position: relative;
+  height: clamp(120px, 15vw, 200px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.marquee-item {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coming-soon-heading {
+  font-family: var(--font-noto-sans), sans-serif;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  font-size: clamp(3rem, 10vw, 8rem);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.coming-soon-cta {
+  margin-top: 3rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: white;
+  color: var(--color-brand-500);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  padding: 0.875rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+  transition: box-shadow 200ms ease, transform 200ms ease;
+}
+
+.coming-soon-cta:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+  transform: scale(1.03);
+}
+
+.coming-soon-cta:active {
+  transform: scale(0.98);
 }
 
 /* Respect user motion preferences */
