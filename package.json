@@ -12,6 +12,7 @@
     "test:watch": "vitest"
   },
   "dependencies": {
+    "@iconify/react": "^6.0.2",
     "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.117.3",
     "gsap": "^3.15.0",
@@ -23,6 +24,7 @@
     "zod": "^4.6.5"
   },
   "devDependencies": {
+    "@iconify-json/solar": "^1.2.13",
     "@tailwindcss/turbopack": "^4",
     "@testing-library/jest-dom": "^7.0.1",
     "@testing-library/react": "^16.3.3",
