@@ -1,3 +1,5 @@
+export const instant = false
+
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import { getTranslations } from 'next-intl/server'

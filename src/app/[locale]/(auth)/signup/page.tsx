@@ -5,6 +5,8 @@ import { Link } from '@/i18n/navigation'
 import { SignupForm } from '@/components/auth/SignupForm'
 import { LanguageSelector } from '@/components/auth/LanguageSelector'
 
+export const instant = false
+
 export const metadata: Metadata = {
   title: 'Crear cuenta — Trebbol',
   description: 'Crea tu cuenta en Trebbol, el ecosistema digital local.',

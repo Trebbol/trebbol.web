@@ -5,6 +5,8 @@ import { Link } from '@/i18n/navigation'
 import { ForgotPasswordForm } from '@/components/auth/ForgotPasswordForm'
 import { LanguageSelector } from '@/components/auth/LanguageSelector'
 
+export const instant = false
+
 export const metadata: Metadata = {
   title: 'Recuperar contraseña — Trebbol',
   description: 'Restablece tu contraseña de Trebbol.',

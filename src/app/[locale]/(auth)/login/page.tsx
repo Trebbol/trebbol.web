@@ -5,6 +5,8 @@ import { Link } from '@/i18n/navigation'
 import { LoginForm } from '@/components/auth/LoginForm'
 import { LanguageSelector } from '@/components/auth/LanguageSelector'
 
+export const instant = false
+
 export const metadata: Metadata = {
   title: 'Iniciar sesión — Trebbol',
   description: 'Accede a tu cuenta en Trebbol, el ecosistema digital local.',
