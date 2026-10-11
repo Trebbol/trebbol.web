@@ -1,0 +1,48 @@
+{
+  "auth": {
+    "title": "Bienvenido de vuelta",
+    "subtitle": "Inicia sesi\u00f3n en tu cuenta de Trebbol",
+    "emailLabel": "Correo electr\u00f3nico",
+    "emailPlaceholder": "tu@email.com",
+    "passwordLabel": "Contrase\u00f1a",
+    "forgotPassword": "\u00bfOlvidaste tu contrase\u00f1a?",
+    "continue": "Continuar",
+    "orContinueWith": "o continuar con",
+    "noAccount": "\u00bfNo tienes una cuenta?",
+    "createAccount": "Crear una cuenta",
+    "downloadApp": "Inicia sesi\u00f3n con c\u00f3digo QR",
+    "appStores": "Escanea este c\u00f3digo con la c\u00e1mara\nde tu tel\u00e9fono para iniciar sesi\u00f3n al instante",
+    "privacyPolicy": "Pol\u00edtica de privacidad",
+    "comingSoon": "Pr\u00f3ximamente",
+    "signingIn": "Iniciando sesi\u00f3n\u2026",
+    "errorGeneric": "Correo o contrase\u00f1a incorrectos"
+  },
+  "signup": {
+    "title": "Crea tu cuenta",
+    "subtitle": "Únete a Trebbol, el ecosistema digital local",
+    "nameLabel": "Nombre completo",
+    "namePlaceholder": "Juan P\u00e9rez",
+    "emailLabel": "Correo electr\u00f3nico",
+    "emailPlaceholder": "tu@email.com",
+    "passwordLabel": "Contrase\u00f1a",
+    "continue": "Crear cuenta",
+    "creatingAccount": "Creando cuenta\u2026",
+    "alreadyAccount": "\u00bfYa tienes una cuenta?",
+    "signIn": "Iniciar sesi\u00f3n",
+    "errorGeneric": "No pudimos crear tu cuenta. Int\u00e9ntalo de nuevo.",
+    "privacyPolicy": "Pol\u00edtica de privacidad"
+  },
+  "forgotPassword": {
+    "title": "\u00bfOlvidaste tu contrase\u00f1a?",
+    "subtitle": "Ingresa tu correo y te enviaremos un enlace para restablecerla",
+    "emailLabel": "Correo electr\u00f3nico",
+    "emailPlaceholder": "tu@email.com",
+    "sendLink": "Enviar enlace",
+    "sending": "Enviando\u2026",
+    "backToLogin": "Volver al inicio de sesi\u00f3n",
+    "successTitle": "Revisa tu bandeja",
+    "successSubtitle": "Enviamos un enlace de restablecimiento a {email}. Revisa tambi\u00e9n tu carpeta de spam.",
+    "errorGeneric": "No pudimos enviar el correo. Int\u00e9ntalo de nuevo.",
+    "privacyPolicy": "Pol\u00edtica de privacidad"
+  }
+}

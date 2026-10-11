@@ -1,0 +1,48 @@
+{
+  "auth": {
+    "title": "Welcome back",
+    "subtitle": "Sign in to your Trebbol account",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@email.com",
+    "passwordLabel": "Password",
+    "forgotPassword": "Forgot password?",
+    "continue": "Continue",
+    "orContinueWith": "or continue with",
+    "noAccount": "Don't have an account?",
+    "createAccount": "Create an account",
+    "downloadApp": "Log in with QR code",
+    "appStores": "Scan this code with your phone camera\nto log in instantly",
+    "privacyPolicy": "Privacy policy",
+    "comingSoon": "Coming soon",
+    "signingIn": "Signing in\u2026",
+    "errorGeneric": "Email or password incorrect"
+  },
+  "signup": {
+    "title": "Create your account",
+    "subtitle": "Join Trebbol, your local digital ecosystem",
+    "nameLabel": "Full name",
+    "namePlaceholder": "John Doe",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@email.com",
+    "passwordLabel": "Password",
+    "continue": "Create account",
+    "creatingAccount": "Creating account\u2026",
+    "alreadyAccount": "Already have an account?",
+    "signIn": "Sign in",
+    "errorGeneric": "We couldn't create your account. Please try again.",
+    "privacyPolicy": "Privacy policy"
+  },
+  "forgotPassword": {
+    "title": "Forgot your password?",
+    "subtitle": "Enter your email and we'll send you a reset link",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@email.com",
+    "sendLink": "Send reset link",
+    "sending": "Sending\u2026",
+    "backToLogin": "Back to login",
+    "successTitle": "Check your inbox",
+    "successSubtitle": "We sent a reset link to {email}. Check your spam folder too.",
+    "errorGeneric": "We couldn't send the email. Please try again.",
+    "privacyPolicy": "Privacy policy"
+  }
+}

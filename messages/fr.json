@@ -1,0 +1,48 @@
+{
+  "auth": {
+    "title": "Bon retour",
+    "subtitle": "Connectez-vous \u00e0 votre compte Trebbol",
+    "emailLabel": "Adresse e-mail",
+    "emailPlaceholder": "vous@email.com",
+    "passwordLabel": "Mot de passe",
+    "forgotPassword": "Mot de passe oubli\u00e9\u00a0?",
+    "continue": "Continuer",
+    "orContinueWith": "ou continuer avec",
+    "noAccount": "Pas encore de compte\u00a0?",
+    "createAccount": "Cr\u00e9er un compte",
+    "downloadApp": "Se connecter avec QR code",
+    "appStores": "Scannez ce code avec votre t\u00e9l\u00e9phone\npour vous connecter instantan\u00e9ment",
+    "privacyPolicy": "Politique de confidentialit\u00e9",
+    "comingSoon": "Bient\u00f4t disponible",
+    "signingIn": "Connexion en cours\u2026",
+    "errorGeneric": "E-mail ou mot de passe incorrect"
+  },
+  "signup": {
+    "title": "Cr\u00e9er votre compte",
+    "subtitle": "Rejoignez Trebbol, votre \u00e9cosyst\u00e8me num\u00e9rique local",
+    "nameLabel": "Nom complet",
+    "namePlaceholder": "Jean Dupont",
+    "emailLabel": "Adresse e-mail",
+    "emailPlaceholder": "vous@email.com",
+    "passwordLabel": "Mot de passe",
+    "continue": "Cr\u00e9er un compte",
+    "creatingAccount": "Cr\u00e9ation en cours\u2026",
+    "alreadyAccount": "Vous avez d\u00e9j\u00e0 un compte\u00a0?",
+    "signIn": "Se connecter",
+    "errorGeneric": "Nous n\u2019avons pas pu cr\u00e9er votre compte. R\u00e9essayez.",
+    "privacyPolicy": "Politique de confidentialit\u00e9"
+  },
+  "forgotPassword": {
+    "title": "Mot de passe oubli\u00e9\u00a0?",
+    "subtitle": "Entrez votre e-mail et nous vous enverrons un lien de r\u00e9initialisation",
+    "emailLabel": "Adresse e-mail",
+    "emailPlaceholder": "vous@email.com",
+    "sendLink": "Envoyer le lien",
+    "sending": "Envoi en cours\u2026",
+    "backToLogin": "Retour \u00e0 la connexion",
+    "successTitle": "V\u00e9rifiez votre bo\u00eete de r\u00e9ception",
+    "successSubtitle": "Nous avons envoy\u00e9 un lien \u00e0 {email}. V\u00e9rifiez aussi vos spams.",
+    "errorGeneric": "Nous n\u2019avons pas pu envoyer l\u2019e-mail. R\u00e9essayez.",
+    "privacyPolicy": "Politique de confidentialit\u00e9"
+  }
+}
