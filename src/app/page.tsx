@@ -46,7 +46,7 @@ export default function ComingSoonPage() {
       <div className="coming-soon-marquee" ref={marqueeRef}>
         {messages.map((msg) => (
           <div key={msg.lang} className="marquee-item">
-            <h1 className="coming-soon-heading">{msg.text}</h1>
+            <h1 className="display-1 uppercase font-bold">{msg.text}</h1>
           </div>
         ))}
       </div>
@@ -54,7 +54,7 @@ export default function ComingSoonPage() {
       <a
         ref={ctaRef}
         href="https://www.google.com"
-        className="coming-soon-cta"
+        className="btn-white coming-soon-cta"
         style={{ opacity: 0 }}
       >
         <AltArrowLeftLinearIcon size={18} aria-hidden="true" />

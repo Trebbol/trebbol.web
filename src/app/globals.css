@@ -2,7 +2,7 @@
 
 @theme {
   --font-sans: 'Inter', var(--font-inter), sans-serif;
-  --font-display: 'Noto Sans', var(--font-noto-sans), sans-serif;
+  --font-display: 'League Spartan', var(--font-league-spartan), sans-serif;
 
   /* Brand */
   --color-brand-50: #E8F8F9;
@@ -98,9 +98,9 @@ html {
   justify-content: center;
 }
 
-.coming-soon-heading {
-  font-family: var(--font-noto-sans), sans-serif;
-  font-weight: 800;
+.display-1 {
+  font-family: var(--font-league-spartan), sans-serif;
+  /* font-weight: 800; */
   color: white;
   text-align: center;
   white-space: nowrap;
@@ -109,29 +109,53 @@ html {
   line-height: 1;
 }
 
-.coming-soon-cta {
-  margin-top: 3rem;
+/* ===== Utilities ===== */
+.uppercase { text-transform: uppercase; }
+
+/* ===== Buttons ===== */
+.btn-primary,
+.btn-white {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: white;
-  color: var(--color-brand-500);
   font-weight: 600;
   font-size: 0.9375rem;
   padding: 0.875rem 2.5rem;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
   text-decoration: none;
+  border: none;
+  cursor: pointer;
   transition: box-shadow 200ms ease, transform 200ms ease;
 }
 
-.coming-soon-cta:hover {
+.btn-primary {
+  background-color: var(--color-brand-500);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-brand-600);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
   transform: scale(1.03);
 }
 
-.coming-soon-cta:active {
+.btn-white {
+  background-color: white;
+  color: var(--color-brand-500);
+}
+
+.btn-white:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+  transform: scale(1.03);
+}
+
+.btn-primary:active,
+.btn-white:active {
   transform: scale(0.98);
+}
+
+.coming-soon-cta {
+  margin-top: 3rem;
 }
 
 /* Respect user motion preferences */

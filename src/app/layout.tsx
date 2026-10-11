@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Inter, Noto_Sans } from "next/font/google"
+import { Inter, League_Spartan } from "next/font/google"
 import "./globals.css"
 
 const inter = Inter({
@@ -7,8 +7,8 @@ const inter = Inter({
   subsets: ["latin"],
 })
 
-const notoSans = Noto_Sans({
-  variable: "--font-noto-sans",
+const leagueSpartan = League_Spartan({
+  variable: "--font-league-spartan",
   subsets: ["latin"],
   weight: ["400", "700", "800"],
 })
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={`${inter.variable} ${notoSans.variable}`}>
+    <html lang="es" className={`${inter.variable} ${leagueSpartan.variable}`}>
       <body className="min-h-screen bg-white text-gray-900">
         {children}
       </body>
