@@ -13,9 +13,19 @@ const variantClasses: Record<Variant, string> = {
 }
 
 interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
+  /** Variante semántica del badge. @default 'default' */
   variant?: Variant
 }
 
+/**
+ * Etiqueta de estado o categoría. Usa variantes semánticas alineadas con los tokens de diseño.
+ *
+ * @example
+ * <Badge variant="success">Activo</Badge>
+ * <Badge variant="draft">Borrador</Badge>
+ * <Badge variant="danger">Vendido</Badge>
+ * <Badge variant="brand">Nuevo</Badge>
+ */
 export function Badge({
   variant = 'default',
   className = '',

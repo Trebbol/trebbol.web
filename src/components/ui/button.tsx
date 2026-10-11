@@ -23,11 +23,31 @@ const sizeClasses: Record<Size, string> = {
 }
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  /** Estilo visual del botón. @default 'primary' */
   variant?: Variant
+  /** Tamaño del botón. @default 'md' */
   size?: Size
+  /** Muestra un spinner y deshabilita el botón mientras carga. @default false */
   loading?: boolean
 }
 
+/**
+ * Botón reutilizable para acciones del dashboard y páginas públicas.
+ *
+ * @example
+ * // Botón primario estándar
+ * <Button>Guardar</Button>
+ *
+ * @example
+ * // Botón destructivo con estado de carga
+ * <Button variant="danger" loading={isPending}>Eliminar</Button>
+ *
+ * @example
+ * // Botón pequeño secundario con icono
+ * <Button variant="secondary" size="sm">
+ *   <PlusIcon size={14} aria-hidden="true" /> Añadir
+ * </Button>
+ */
 export function Button({
   variant = 'primary',
   size = 'md',
