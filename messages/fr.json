@@ -178,5 +178,31 @@
       "col4Link3": "Carri\u00e8res",
       "col4Link4": "Presse"
     }
+  },
+  "home": {
+    "eyebrow": "Bêta · Belgique",
+    "title": "Achetez, travaillez et\ngrandissez dans votre communauté",
+    "subtitle": "Trebbol connecte voisins, freelances et entreprises locales sur une seule plateforme.",
+    "ctaPrimary": "Créer un compte",
+    "ctaSecondary": "Explorer",
+    "search": {
+      "placeholder": "Rechercher produits, services, emplois..."
+    },
+    "products": {
+      "title": "Produits en vedette",
+      "cta": "Voir tout"
+    },
+    "jobs": {
+      "title": "Offres d'emploi tendance",
+      "cta": "Voir toutes les offres"
+    },
+    "freelancers": {
+      "title": "Freelances en vedette",
+      "cta": "Trouver des freelances"
+    },
+    "businesses": {
+      "title": "Commerces locaux",
+      "cta": "Explorer les commerces"
+    }
   }
 }

@@ -178,5 +178,31 @@
       "col4Link3": "Carri\u00e8re",
       "col4Link4": "Pers"
     }
+  },
+  "home": {
+    "eyebrow": "Beta · België",
+    "title": "Koop, werk en\ngroei in je gemeenschap",
+    "subtitle": "Trebbol verbindt buren, freelancers en lokale bedrijven op één platform.",
+    "ctaPrimary": "Account aanmaken",
+    "ctaSecondary": "Verkennen",
+    "search": {
+      "placeholder": "Zoek producten, diensten, vacatures..."
+    },
+    "products": {
+      "title": "Uitgelichte producten",
+      "cta": "Alles bekijken"
+    },
+    "jobs": {
+      "title": "Trending vacatures",
+      "cta": "Alle vacatures"
+    },
+    "freelancers": {
+      "title": "Uitgelichte freelancers",
+      "cta": "Vind freelancers"
+    },
+    "businesses": {
+      "title": "Lokale bedrijven",
+      "cta": "Ontdek bedrijven"
+    }
   }
 }

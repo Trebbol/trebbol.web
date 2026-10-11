@@ -2,6 +2,8 @@ import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
 import { getTranslations } from 'next-intl/server'
 
+const YEAR = new Date().getFullYear()
+
 function IconFacebook() {
   return (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -77,7 +79,7 @@ export async function PublicFooter() {
 
         <div className="pub-footer__bottom">
           <p className="pub-footer__copyright">
-            {t('copyright', { year: new Date().getFullYear() })}
+            {t('copyright', { year: YEAR })}
           </p>
           <p className="pub-footer__legal-text">{t('legal1')}</p>
           <p className="pub-footer__legal-text">{t('legal2')}</p>

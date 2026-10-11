@@ -178,5 +178,31 @@
       "col4Link3": "Careers",
       "col4Link4": "Press"
     }
+  },
+  "home": {
+    "eyebrow": "Beta · Belgium",
+    "title": "Buy, work and\ngrow in your community",
+    "subtitle": "Trebbol connects neighbors, freelancers and local businesses in one platform.",
+    "ctaPrimary": "Create account",
+    "ctaSecondary": "Explore",
+    "search": {
+      "placeholder": "Search products, services, jobs..."
+    },
+    "products": {
+      "title": "Featured Products",
+      "cta": "View all"
+    },
+    "jobs": {
+      "title": "Trending Jobs",
+      "cta": "See all jobs"
+    },
+    "freelancers": {
+      "title": "Featured Freelancers",
+      "cta": "Find freelancers"
+    },
+    "businesses": {
+      "title": "Local Businesses",
+      "cta": "Explore businesses"
+    }
   }
 }
