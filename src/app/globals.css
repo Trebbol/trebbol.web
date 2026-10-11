@@ -2,6 +2,7 @@
 
 @theme {
   --font-sans: 'Inter', var(--font-inter), sans-serif;
+  --font-display: 'League Spartan', var(--font-league-spartan), sans-serif;
 
   /* Brand */
   --color-brand-50: #E8F8F9;
@@ -67,6 +68,94 @@ html {
   font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== Coming Soon ===== */
+.coming-soon-page {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-brand-500);
+}
+
+.coming-soon-marquee {
+  position: relative;
+  height: clamp(120px, 15vw, 200px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.marquee-item {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display-1 {
+  font-family: var(--font-league-spartan), sans-serif;
+  /* font-weight: 800; */
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  font-size: clamp(3rem, 10vw, 8rem);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+/* ===== Utilities ===== */
+.uppercase { text-transform: uppercase; }
+
+/* ===== Buttons ===== */
+.btn-primary,
+.btn-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  padding: 0.875rem 2.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 200ms ease, transform 200ms ease;
+}
+
+.btn-primary {
+  background-color: var(--color-brand-500);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-brand-600);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+  transform: scale(1.03);
+}
+
+.btn-white {
+  background-color: white;
+  color: var(--color-brand-500);
+}
+
+.btn-white:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+  transform: scale(1.03);
+}
+
+.btn-primary:active,
+.btn-white:active {
+  transform: scale(0.98);
+}
+
+.coming-soon-cta {
+  margin-top: 3rem;
 }
 
 /* Respect user motion preferences */
