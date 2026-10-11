@@ -1,0 +1,208 @@
+{
+  "public": {
+    "nav": {
+      "personal": "Personal",
+      "business": "Business",
+      "company": "Company",
+      "login": "Log in",
+      "signup": "Sign up"
+    },
+    "footer": {
+      "region": "🇧🇪 Belgium",
+      "websiteTerms": "Website Terms",
+      "legalAgreements": "Legal Agreements",
+      "complaints": "Complaints",
+      "privacyLink": "Privacy",
+      "dataPrivacy": "Data Privacy Statement for Candidates",
+      "copyright": "© {year} Trebbol. All Rights Reserved.",
+      "legal1": "Trebbol is a digital marketplace platform that connects neighbors, freelancers, and businesses in local communities. Trebbol is not a financial institution. Payment services are provided by licensed third-party payment processors. Trebbol B.V. — Registered in Belgium.",
+      "legal2": "Trebbol services and features may vary by region. Some products may not be available in all areas.",
+      "col1Title": "Marketplace",
+      "col1Link1": "Buy products",
+      "col1Link2": "Sell products",
+      "col1Link3": "Browse services",
+      "col1Link4": "Post a service",
+      "col2Title": "Jobs",
+      "col2Link1": "Browse jobs",
+      "col2Link2": "Post a job",
+      "col2Link3": "For companies",
+      "col2Link4": "For freelancers",
+      "col3Title": "Cities",
+      "col3Link1": "Trebbol Brussels",
+      "col3Link2": "Trebbol Antwerp",
+      "col3Link3": "Trebbol Ghent",
+      "col3Link4": "Trebbol Liège",
+      "col4Title": "Company",
+      "col4Link1": "About Trebbol",
+      "col4Link2": "Blog",
+      "col4Link3": "Careers",
+      "col4Link4": "Press"
+    }
+  },
+  "auth": {
+    "title": "Welcome back",
+    "subtitle": "Sign in to your Trebbol account",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@email.com",
+    "passwordLabel": "Password",
+    "forgotPassword": "Forgot password?",
+    "continue": "Continue",
+    "orContinueWith": "or continue with",
+    "noAccount": "Don't have an account?",
+    "createAccount": "Create an account",
+    "downloadApp": "Log in with QR code",
+    "appStores": "Scan this code with your phone camera\nto log in instantly",
+    "privacyPolicy": "Privacy policy",
+    "comingSoon": "Coming soon",
+    "signingIn": "Signing in\u2026",
+    "errorGeneric": "Email or password incorrect"
+  },
+  "signup": {
+    "title": "Create your account",
+    "subtitle": "Join Trebbol, your local digital ecosystem",
+    "nameLabel": "Full name",
+    "namePlaceholder": "John Doe",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@email.com",
+    "passwordLabel": "Password",
+    "continue": "Create account",
+    "creatingAccount": "Creating account\u2026",
+    "alreadyAccount": "Already have an account?",
+    "signIn": "Sign in",
+    "errorGeneric": "We couldn't create your account. Please try again.",
+    "privacyPolicy": "Privacy policy"
+  },
+  "forgotPassword": {
+    "title": "Forgot your password?",
+    "subtitle": "Enter your email and we'll send you a reset link",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@email.com",
+    "sendLink": "Send reset link",
+    "sending": "Sending\u2026",
+    "backToLogin": "Back to login",
+    "successTitle": "Check your inbox",
+    "successSubtitle": "We sent a reset link to {email}. Check your spam folder too.",
+    "errorGeneric": "We couldn't send the email. Please try again.",
+    "privacyPolicy": "Privacy policy"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Page not found",
+    "text": "The page you're looking for doesn't exist or has been moved.",
+    "back": "Back to home"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy \u2014 Trebbol",
+      "description": "At Trebbol, it\u2019s important to us that you have choices and control in how we handle your personal data."
+    },
+    "nav": {
+      "personal": "Personal",
+      "business": "Business",
+      "company": "Company",
+      "login": "Log in",
+      "signup": "Sign up"
+    },
+    "hero": {
+      "title": "Privacy at Trebbol",
+      "subtitle": "At Trebbol, it\u2019s important to us that you have choices and control in how we handle your personal data. All our products are reviewed extensively by our privacy team before launch, so you can expect privacy by design."
+    },
+    "group1": "Your privacy matters to us",
+    "group2": "Our commitment to you",
+    "yourData": {
+      "title": "Your data",
+      "text": "Your personal data belongs to you, and you have the right to understand and control how it\u2019s used."
+    },
+    "yourRights": {
+      "title": "Your rights",
+      "text": "If you want to exercise your rights over your personal data, you can contact us any time at <email>privacy@trebbol.com</email>."
+    },
+    "keepingInLoop": {
+      "title": "Keeping you in the loop",
+      "text": "If you share data with us, we\u2019ll let you know exactly how we\u2019re using it. We\u2019ll explain how we collect and use your personal data in our privacy notices, so you know what\u2019s happening."
+    },
+    "rightToChoose": {
+      "title": "Giving you the right to choose",
+      "text": "We give you clear choices and simple tools to exercise your rights. If we collect data, we\u2019ll tell you why. Adjust your preferences anytime through the \u2018Security & privacy\u2019 section in-app."
+    },
+    "protectingData": {
+      "title": "Protecting your data",
+      "text": "Our full-stack security systems watch over your account 24/7 to flag suspicious activity and keep your details safe. Our support team is always on hand if you need help."
+    },
+    "customersFirst": {
+      "title": "Putting our customers first",
+      "text": "When we collect and use your data, it\u2019s only to help us deliver exceptional services and improve your experience."
+    },
+    "notices": {
+      "title": "Our full privacy notices",
+      "personalSubtitle": "Privacy notices for personal users",
+      "card1": "Customer Privacy Notice for personal account users",
+      "card2": "Trebbol under-18 Customer Privacy Notice",
+      "businessSubtitle": "Trebbol Business privacy notices",
+      "card3": "Trebbol Business Customer Privacy Notice",
+      "card4": "Prospective Customer Privacy Notice"
+    },
+    "closing": {
+      "line1": "We want to build a better digital ecosystem with you in control, and respecting your privacy is a big part of that goal.",
+      "line2": "We\u2019re always working to improve, so if you notice something that doesn\u2019t meet your expectations when it comes to privacy, let us know.",
+      "line3": "Our friendly privacy team at <email>privacy@trebbol.com</email> will make sure your voice is heard."
+    },
+    "footer": {
+      "region": "\ud83c\udde7\ud83c\uddea Belgium",
+      "websiteTerms": "Website Terms",
+      "legalAgreements": "Legal Agreements",
+      "complaints": "Complaints",
+      "privacyLink": "Privacy",
+      "dataPrivacy": "Data Privacy Statement for Candidates",
+      "copyright": "\u00a9 {year} Trebbol. All Rights Reserved.",
+      "legal1": "Trebbol is a digital marketplace platform that connects neighbors, freelancers, and businesses in local communities. Trebbol is not a financial institution. Payment services are provided by licensed third-party payment processors. Trebbol B.V. \u2014 Registered in Belgium.",
+      "legal2": "Trebbol services and features may vary by region. Some products may not be available in all areas.",
+      "col1Title": "Marketplace",
+      "col1Link1": "Buy products",
+      "col1Link2": "Sell products",
+      "col1Link3": "Browse services",
+      "col1Link4": "Post a service",
+      "col2Title": "Jobs",
+      "col2Link1": "Browse jobs",
+      "col2Link2": "Post a job",
+      "col2Link3": "For companies",
+      "col2Link4": "For freelancers",
+      "col3Title": "Cities",
+      "col3Link1": "Trebbol Brussels",
+      "col3Link2": "Trebbol Antwerp",
+      "col3Link3": "Trebbol Ghent",
+      "col3Link4": "Trebbol Li\u00e8ge",
+      "col4Title": "Company",
+      "col4Link1": "About Trebbol",
+      "col4Link2": "Blog",
+      "col4Link3": "Careers",
+      "col4Link4": "Press"
+    }
+  },
+  "home": {
+    "eyebrow": "Beta · Belgium",
+    "title": "Buy, work and\ngrow in your community",
+    "subtitle": "Trebbol connects neighbors, freelancers and local businesses in one platform.",
+    "ctaPrimary": "Create account",
+    "ctaSecondary": "Explore",
+    "search": {
+      "placeholder": "Search products, services, jobs..."
+    },
+    "products": {
+      "title": "Featured Products",
+      "cta": "View all"
+    },
+    "jobs": {
+      "title": "Trending Jobs",
+      "cta": "See all jobs"
+    },
+    "freelancers": {
+      "title": "Featured Freelancers",
+      "cta": "Find freelancers"
+    },
+    "businesses": {
+      "title": "Local Businesses",
+      "cta": "Explore businesses"
+    }
+  }
+}

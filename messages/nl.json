@@ -1,0 +1,208 @@
+{
+  "public": {
+    "nav": {
+      "personal": "Particulier",
+      "business": "Zakelijk",
+      "company": "Corporate",
+      "login": "Inloggen",
+      "signup": "Aanmelden"
+    },
+    "footer": {
+      "region": "🇧🇪 België",
+      "websiteTerms": "Websitevoorwaarden",
+      "legalAgreements": "Juridische overeenkomsten",
+      "complaints": "Klachten",
+      "privacyLink": "Privacy",
+      "dataPrivacy": "Privacyverklaring voor kandidaten",
+      "copyright": "© {year} Trebbol. Alle rechten voorbehouden.",
+      "legal1": "Trebbol is een digitaal marktplaatsplatform dat buren, freelancers en bedrijven verbindt in lokale gemeenschappen. Trebbol is geen financiële instelling. Betalingsdiensten worden geleverd door gelicentieerde externe betalingsdienstaanbieders. Trebbol B.V. — Geregistreerd in België.",
+      "legal2": "Trebbol-diensten en -functies kunnen per regio verschillen. Sommige producten zijn mogelijk niet in alle gebieden beschikbaar.",
+      "col1Title": "Marktplaats",
+      "col1Link1": "Producten kopen",
+      "col1Link2": "Producten verkopen",
+      "col1Link3": "Diensten bekijken",
+      "col1Link4": "Een dienst plaatsen",
+      "col2Title": "Vacatures",
+      "col2Link1": "Vacatures bekijken",
+      "col2Link2": "Vacature plaatsen",
+      "col2Link3": "Voor bedrijven",
+      "col2Link4": "Voor freelancers",
+      "col3Title": "Steden",
+      "col3Link1": "Trebbol Brussel",
+      "col3Link2": "Trebbol Antwerpen",
+      "col3Link3": "Trebbol Gent",
+      "col3Link4": "Trebbol Luik",
+      "col4Title": "Bedrijf",
+      "col4Link1": "Over Trebbol",
+      "col4Link2": "Blog",
+      "col4Link3": "Carrière",
+      "col4Link4": "Pers"
+    }
+  },
+  "auth": {
+    "title": "Welkom terug",
+    "subtitle": "Meld je aan bij je Trebbol-account",
+    "emailLabel": "E-mailadres",
+    "emailPlaceholder": "jij@email.com",
+    "passwordLabel": "Wachtwoord",
+    "forgotPassword": "Wachtwoord vergeten?",
+    "continue": "Doorgaan",
+    "orContinueWith": "of doorgaan met",
+    "noAccount": "Nog geen account?",
+    "createAccount": "Maak een account aan",
+    "downloadApp": "Inloggen met QR-code",
+    "appStores": "Scan deze code met je telefoon\nom direct in te loggen",
+    "privacyPolicy": "Privacybeleid",
+    "comingSoon": "Binnenkort beschikbaar",
+    "signingIn": "Bezig met aanmelden\u2026",
+    "errorGeneric": "E-mail of wachtwoord onjuist"
+  },
+  "signup": {
+    "title": "Account aanmaken",
+    "subtitle": "Word onderdeel van het lokale digitale ecosysteem",
+    "nameLabel": "Volledige naam",
+    "namePlaceholder": "Jan de Vries",
+    "emailLabel": "E-mailadres",
+    "emailPlaceholder": "jij@email.com",
+    "passwordLabel": "Wachtwoord",
+    "continue": "Account aanmaken",
+    "creatingAccount": "Account aanmaken\u2026",
+    "alreadyAccount": "Heb je al een account?",
+    "signIn": "Aanmelden",
+    "errorGeneric": "We konden je account niet aanmaken. Probeer het opnieuw.",
+    "privacyPolicy": "Privacybeleid"
+  },
+  "forgotPassword": {
+    "title": "Wachtwoord vergeten?",
+    "subtitle": "Voer je e-mailadres in en we sturen je een resetlink",
+    "emailLabel": "E-mailadres",
+    "emailPlaceholder": "jij@email.com",
+    "sendLink": "Resetlink versturen",
+    "sending": "Versturen\u2026",
+    "backToLogin": "Terug naar aanmelden",
+    "successTitle": "Controleer je inbox",
+    "successSubtitle": "We hebben een resetlink gestuurd naar {email}. Controleer ook je spammap.",
+    "errorGeneric": "We konden het e-mailbericht niet versturen. Probeer het opnieuw.",
+    "privacyPolicy": "Privacybeleid"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Pagina niet gevonden",
+    "text": "De pagina die je zoekt bestaat niet of is verplaatst.",
+    "back": "Terug naar home"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy \u2014 Trebbol",
+      "description": "Bij Trebbol vinden wij het belangrijk dat u keuzes heeft en controle heeft over hoe wij met uw persoonsgegevens omgaan."
+    },
+    "nav": {
+      "personal": "Particulier",
+      "business": "Zakelijk",
+      "company": "Corporate",
+      "login": "Inloggen",
+      "signup": "Aanmelden"
+    },
+    "hero": {
+      "title": "Privacy bij Trebbol",
+      "subtitle": "Bij Trebbol vinden wij het belangrijk dat u keuzes heeft en controle heeft over hoe wij met uw persoonsgegevens omgaan. Al onze producten worden uitgebreid beoordeeld door ons privacyteam v\u00f3\u00f3r de lancering, zodat u privacy by design kunt verwachten."
+    },
+    "group1": "Uw privacy is belangrijk voor ons",
+    "group2": "Onze toezegging aan u",
+    "yourData": {
+      "title": "Uw gegevens",
+      "text": "Uw persoonsgegevens zijn van u en u heeft het recht om te begrijpen en te controleren hoe ze worden gebruikt."
+    },
+    "yourRights": {
+      "title": "Uw rechten",
+      "text": "Als u uw rechten over uw persoonsgegevens wilt uitoefenen, kunt u ons op elk moment bereiken via <email>privacy@trebbol.com</email>."
+    },
+    "keepingInLoop": {
+      "title": "U op de hoogte houden",
+      "text": "Als u gegevens met ons deelt, laten we u precies weten hoe we ze gebruiken. We leggen uit hoe we uw persoonsgegevens verzamelen en gebruiken in onze privacyverklaringen, zodat u weet wat er gebeurt."
+    },
+    "rightToChoose": {
+      "title": "U het recht geven om te kiezen",
+      "text": "We bieden u duidelijke keuzes en eenvoudige tools om uw rechten uit te oefenen. Als we gegevens verzamelen, vertellen we u waarom. Pas uw voorkeuren aan via de sectie \u2018Beveiliging en privacy\u2019 in de app."
+    },
+    "protectingData": {
+      "title": "Uw gegevens beschermen",
+      "text": "Onze beveiligingssystemen bewaken uw account 24/7 om verdachte activiteiten te signaleren en uw gegevens veilig te houden. Ons supportteam staat altijd klaar als u hulp nodig heeft."
+    },
+    "customersFirst": {
+      "title": "Onze klanten op de eerste plaats",
+      "text": "Wanneer we uw gegevens verzamelen en gebruiken, is dit uitsluitend om uitzonderlijke diensten te leveren en uw ervaring te verbeteren."
+    },
+    "notices": {
+      "title": "Onze volledige privacyverklaringen",
+      "personalSubtitle": "Privacyverklaringen voor particuliere gebruikers",
+      "card1": "Privacyverklaring voor klanten met een persoonlijk account",
+      "card2": "Trebbol privacyverklaring voor gebruikers onder 18 jaar",
+      "businessSubtitle": "Trebbol Business privacyverklaringen",
+      "card3": "Trebbol Business klantprivacyverklaring",
+      "card4": "Privacyverklaring voor potenti\u00eble klanten"
+    },
+    "closing": {
+      "line1": "We willen samen met u een beter digitaal ecosysteem bouwen waarbij u de controle heeft, en het respecteren van uw privacy is een groot deel van dat doel.",
+      "line2": "We werken altijd aan verbetering, dus als u iets opmerkt dat niet aan uw verwachtingen voldoet op het gebied van privacy, laat het ons weten.",
+      "line3": "Ons vriendelijke privacyteam bij <email>privacy@trebbol.com</email> zorgt ervoor dat uw stem wordt gehoord."
+    },
+    "footer": {
+      "region": "\ud83c\udde7\ud83c\uddea Belgi\u00eb",
+      "websiteTerms": "Websitevoorwaarden",
+      "legalAgreements": "Juridische overeenkomsten",
+      "complaints": "Klachten",
+      "privacyLink": "Privacy",
+      "dataPrivacy": "Privacyverklaring voor kandidaten",
+      "copyright": "\u00a9 {year} Trebbol. Alle rechten voorbehouden.",
+      "legal1": "Trebbol is een digitaal marktplaatsplatform dat buren, freelancers en bedrijven verbindt in lokale gemeenschappen. Trebbol is geen financi\u00eble instelling. Betalingsdiensten worden geleverd door gelicentieerde externe betalingsdienstaanbieders. Trebbol B.V. \u2014 Geregistreerd in Belgi\u00eb.",
+      "legal2": "Trebbol-diensten en -functies kunnen per regio verschillen. Sommige producten zijn mogelijk niet in alle gebieden beschikbaar.",
+      "col1Title": "Marktplaats",
+      "col1Link1": "Producten kopen",
+      "col1Link2": "Producten verkopen",
+      "col1Link3": "Diensten bekijken",
+      "col1Link4": "Een dienst plaatsen",
+      "col2Title": "Vacatures",
+      "col2Link1": "Vacatures bekijken",
+      "col2Link2": "Vacature plaatsen",
+      "col2Link3": "Voor bedrijven",
+      "col2Link4": "Voor freelancers",
+      "col3Title": "Steden",
+      "col3Link1": "Trebbol Brussel",
+      "col3Link2": "Trebbol Antwerpen",
+      "col3Link3": "Trebbol Gent",
+      "col3Link4": "Trebbol Luik",
+      "col4Title": "Bedrijf",
+      "col4Link1": "Over Trebbol",
+      "col4Link2": "Blog",
+      "col4Link3": "Carri\u00e8re",
+      "col4Link4": "Pers"
+    }
+  },
+  "home": {
+    "eyebrow": "Beta · België",
+    "title": "Koop, werk en\ngroei in je gemeenschap",
+    "subtitle": "Trebbol verbindt buren, freelancers en lokale bedrijven op één platform.",
+    "ctaPrimary": "Account aanmaken",
+    "ctaSecondary": "Verkennen",
+    "search": {
+      "placeholder": "Zoek producten, diensten, vacatures..."
+    },
+    "products": {
+      "title": "Uitgelichte producten",
+      "cta": "Alles bekijken"
+    },
+    "jobs": {
+      "title": "Trending vacatures",
+      "cta": "Alle vacatures"
+    },
+    "freelancers": {
+      "title": "Uitgelichte freelancers",
+      "cta": "Vind freelancers"
+    },
+    "businesses": {
+      "title": "Lokale bedrijven",
+      "cta": "Ontdek bedrijven"
+    }
+  }
+}
