@@ -456,10 +456,17 @@ Conservar `lucide-react` para el dashboard y los componentes administrativos.
 
 Para Home, Jobs, Marketplace, Freelancer y Local, utilizar **Solar Icons** como biblioteca principal de iconos.
 
+Paquete instalado: `@solar-icons/react` (ya disponible en el proyecto).
+
+Uso:
+```tsx
+import { HomeAngleBoldDuotone } from '@solar-icons/react'
+// o variantes: Bold, Linear, Outline, BoldDuotone, etc.
+```
+
 Referencia: https://solar-icons.vercel.app/icons
 
-- Comprueba la forma oficial de instalar y utilizar Solar Icons en React antes de añadir la dependencia.
-- Prefiere los paquetes oficiales o las implementaciones documentadas por sus autores.
+- No instales `@iconify/react` ni `@iconify-json/solar` — ya han sido eliminados.
 - No inventes nombres de paquetes, componentes ni nombres de iconos.
 - Evita cargar la biblioteca completa si basta con importaciones individuales.
 - Mantén tamaños, alineación y color consistentes.
