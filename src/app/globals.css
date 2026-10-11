@@ -3,7 +3,7 @@
 @theme {
   --font-sans: 'Inter', var(--font-inter), sans-serif;
 
-  /* Brand / Primary */
+  /* Brand */
   --color-brand-50: #E8F8F9;
   --color-brand-100: #BFEDF0;
   --color-brand-200: #90DFE6;
@@ -16,16 +16,47 @@
   --color-brand-900: #054149;
   --color-brand-950: #022A30;
 
+  /* Gray (custom palette) */
+  --color-gray-50: #F8F9FB;
+  --color-gray-100: #F1F2F5;
+  --color-gray-200: #E6E8EC;
+  --color-gray-300: #CFD2D9;
+  --color-gray-400: #A6A6A6;
+  --color-gray-500: #757575;
+  --color-gray-600: #414858;
+  --color-gray-700: #2F3542;
+  --color-gray-800: #1E2230;
+  --color-gray-900: #0E1018;
+
+  /* Dark surfaces */
+  --color-dark-surface: #161418;
+  --color-dark-surface-2: #28282A;
+  --color-dark-border: #2A2A2A;
+  --color-neutral-900: #1E1E1E;
+  --color-neutral-800: #2B2B2B;
+
   /* Semantic */
   --color-danger: #D52832;
+  --color-danger-bg: #FFF0F1;
   --color-success: #119055;
+  --color-success-bg: #ECFDF4;
   --color-warning: #F27E31;
+  --color-warning-bg: #FCECD8;
   --color-info: #195DEF;
+  --color-info-bg: #EDF7FD;
+  --color-draft: #414858;
+  --color-draft-bg: #F2F4F7;
+  --color-rating-gold: #FFC107;
 
-  /* Border Radius */
+  /* Border radius
+     md (6px), lg (8px), xl (12px) match Tailwind v4 defaults — no override needed.
+     card = 16px, 3xl override = 20px, 4xl = 24px */
   --radius-card: 16px;
+  --radius-3xl: 20px;
+  --radius-4xl: 24px;
 }
 
+/* Base reset */
 * {
   margin: 0;
   padding: 0;
@@ -36,4 +67,15 @@ html {
   font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
