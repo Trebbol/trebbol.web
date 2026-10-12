@@ -22,6 +22,7 @@
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "server-only": "^0.0.1",
+    "swiper": "^14.3.0",
     "zod": "^4.6.5"
   },
   "devDependencies": {
@@ -44,6 +45,9 @@
   },
   "packageManager": "pnpm@10.20.0",
   "pnpm": {
-    "onlyBuiltDependencies": ["@parcel/watcher", "@swc/core"]
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "@swc/core"
+    ]
   }
 }

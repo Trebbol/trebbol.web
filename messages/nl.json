@@ -182,25 +182,30 @@
   "home": {
     "eyebrow": "Beta · België",
     "title": "Koop, werk en\ngroei in je gemeenschap",
-    "subtitle": "Trebbol verbindt buren, freelancers en lokale bedrijven op één platform.",
+    "subtitle": "Trebbol verbindt buren, freelancers en lokale bedrijven op één platform. Alles wat je gemeenschap nodig heeft, op één plek.",
+    "typewriter": ["Verkoop", "Koop", "Solliciteer op een vacature", "Plaats je advertentie", "Vind een freelancer"],
     "ctaPrimary": "Account aanmaken",
     "ctaSecondary": "Verkennen",
     "search": {
       "placeholder": "Zoek producten, diensten, vacatures..."
     },
     "products": {
+      "eyebrow": "Marktplaats",
       "title": "Uitgelichte producten",
       "cta": "Alles bekijken"
     },
     "jobs": {
-      "title": "Trending vacatures",
-      "cta": "Alle vacatures"
+      "eyebrow": "Carrière",
+      "title": "Uitgelichte vacatures",
+      "cta": "Meer vacatures"
     },
     "freelancers": {
+      "eyebrow": "Freelancers",
       "title": "Uitgelichte freelancers",
       "cta": "Vind freelancers"
     },
     "businesses": {
+      "eyebrow": "Lokale gemeenschap",
       "title": "Lokale bedrijven",
       "cta": "Ontdek bedrijven"
     }

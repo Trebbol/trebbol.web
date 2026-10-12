@@ -182,25 +182,30 @@
   "home": {
     "eyebrow": "Beta · Bélgica",
     "title": "Compra, trabaja y\ncrece en tu comunidad",
-    "subtitle": "Trebbol conecta vecinos, freelancers y negocios locales en una sola plataforma.",
+    "subtitle": "Trebbol conecta vecinos, freelancers y negocios locales en una sola plataforma. Todo lo que tu comunidad necesita, en un solo lugar.",
+    "typewriter": ["Vende", "Compra", "Aplica a una vacante", "Publica tu anuncio", "Busca un freelancer"],
     "ctaPrimary": "Crear cuenta",
     "ctaSecondary": "Explorar",
     "search": {
       "placeholder": "Buscar productos, servicios, empleos..."
     },
     "products": {
+      "eyebrow": "Marketplace",
       "title": "Productos destacados",
       "cta": "Ver todos"
     },
     "jobs": {
+      "eyebrow": "Carrera",
       "title": "Empleos destacados",
-      "cta": "Ver todos los empleos"
+      "cta": "Ver más empleos"
     },
     "freelancers": {
+      "eyebrow": "Freelancers",
       "title": "Freelancers destacados",
       "cta": "Encontrar freelancers"
     },
     "businesses": {
+      "eyebrow": "Comunidad local",
       "title": "Negocios locales",
       "cta": "Explorar negocios"
     }

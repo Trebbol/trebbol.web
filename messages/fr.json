@@ -182,25 +182,30 @@
   "home": {
     "eyebrow": "Bêta · Belgique",
     "title": "Achetez, travaillez et\ngrandissez dans votre communauté",
-    "subtitle": "Trebbol connecte voisins, freelances et entreprises locales sur une seule plateforme.",
+    "subtitle": "Trebbol connecte voisins, freelances et entreprises locales sur une seule plateforme. Tout ce dont votre communauté a besoin, en un seul endroit.",
+    "typewriter": ["Vends", "Achète", "Postule à une offre", "Publie ton annonce", "Trouve un freelancer"],
     "ctaPrimary": "Créer un compte",
     "ctaSecondary": "Explorer",
     "search": {
       "placeholder": "Rechercher produits, services, emplois..."
     },
     "products": {
+      "eyebrow": "Marketplace",
       "title": "Produits en vedette",
       "cta": "Voir tout"
     },
     "jobs": {
-      "title": "Offres d'emploi tendance",
-      "cta": "Voir toutes les offres"
+      "eyebrow": "Carrière",
+      "title": "Offres d'emploi en vedette",
+      "cta": "Voir plus d'offres"
     },
     "freelancers": {
+      "eyebrow": "Freelances",
       "title": "Freelances en vedette",
       "cta": "Trouver des freelances"
     },
     "businesses": {
+      "eyebrow": "Communauté locale",
       "title": "Commerces locaux",
       "cta": "Explorer les commerces"
     }
