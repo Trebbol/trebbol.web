@@ -16,7 +16,8 @@ const SLIDES = [
     cta: 'Ver ahora',
     badge: '€349',
     reviews: { count: '124+', label: 'reseñas' },
-    img: 'https://images.pexels.com/photos/3799291/pexels-photo-3799291.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    img: 'https://images.pexels.com/photos/3394665/pexels-photo-3394665.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    imgPosition: '60% center',
     overlay: '#FFF0EB',
   },
   {
@@ -27,7 +28,8 @@ const SLIDES = [
     cta: 'Contratar',
     badge: '€35/h',
     reviews: { count: '89+', label: 'trabajos' },
-    img: 'https://images.pexels.com/photos/6419128/pexels-photo-6419128.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    img: 'https://images.pexels.com/photos/8486972/pexels-photo-8486972.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    imgPosition: '65% center',
     overlay: '#FFF8E6',
   },
   {
@@ -38,7 +40,8 @@ const SLIDES = [
     cta: 'Visitar',
     badge: '4.9 ★',
     reviews: { count: '4.9', label: 'puntuación' },
-    img: 'https://images.pexels.com/photos/5414331/pexels-photo-5414331.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    img: 'https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    imgPosition: '70% center',
     overlay: '#F5FAEE',
   },
 ]
@@ -55,48 +58,36 @@ export function HeroBanner() {
 
   return (
     <section className="hero-banner">
-      <div className="section__inner">
-        <div className="hero-banner__track">
-          {/* Nav dots — inside the slider */}
-          <div className="hero-banner__nav">
-            {SLIDES.map((_, i) => (
-              <button
-                key={i}
-                className={`hero-banner__nav-dot${i === activeIdx ? ' hero-banner__nav-dot--active' : ''}`}
-                style={i === activeIdx ? { width: '22px' } : {}}
-                onClick={() => swiperRef.current?.slideTo(i + 1)}
-                aria-label={`Slide ${i + 1}`}
-              />
-            ))}
-          </div>
-          <Swiper
-            modules={[Autoplay]}
-            autoplay={{ delay: 5000, disableOnInteraction: false }}
-            loop
-            onSwiper={(s) => { swiperRef.current = s }}
-            onRealIndexChange={(s) => setActiveIdx(s.realIndex)}
-            className="hero-banner__swiper"
-          >
-            {SLIDES.map((slide, i) => (
-              <SwiperSlide key={slide.id}>
-                <div className="hero-banner__slide">
+      <div className="hero-banner__track">
+        <Swiper
+          modules={[Autoplay]}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          loop
+          onSwiper={(s) => { swiperRef.current = s }}
+          onRealIndexChange={(s) => setActiveIdx(s.realIndex)}
+          className="hero-banner__swiper"
+        >
+          {SLIDES.map((slide, i) => (
+            <SwiperSlide key={slide.id}>
+              <div className="hero-banner__slide">
 
-                  {/* Background image */}
-                  <Image
-                    src={slide.img}
-                    alt={slide.title.replace('\n', ' ')}
-                    fill
-                    style={{ objectFit: 'cover', objectPosition: 'center' }}
-                    sizes="1200px"
-                    priority={i === 0}
-                  />
+                {/* Background image */}
+                <Image
+                  src={slide.img}
+                  alt={slide.title.replace('\n', ' ')}
+                  fill
+                  style={{ objectFit: 'cover', objectPosition: slide.imgPosition }}
+                  sizes="100vw"
+                  priority={i === 0}
+                />
 
-                  {/* Gradient overlay — opaque left → transparent right */}
-                  <div className="hero-banner__overlay" style={{
-                    background: `linear-gradient(to right, ${slide.overlay} 0%, ${slide.overlay}F2 30%, ${slide.overlay}99 55%, ${slide.overlay}22 75%, transparent 90%)`,
-                  }} />
+                {/* Gradient overlay — opaque left → transparent right */}
+                <div className="hero-banner__overlay" style={{
+                  background: `linear-gradient(to right, ${slide.overlay} 0%, ${slide.overlay}F2 30%, ${slide.overlay}99 55%, ${slide.overlay}22 75%, transparent 90%)`,
+                }} />
 
-                  {/* Content */}
+                {/* Inner — mirrors container width */}
+                <div className="hero-banner__inner">
                   <div className="hero-banner__content">
                     <p className="hero-banner__eyebrow">
                       <span className="hero-banner__accent-dot" />
@@ -106,11 +97,24 @@ export function HeroBanner() {
                     <p className="hero-banner__desc">{slide.desc}</p>
                     <a href="#" className="btn-dark btn-sm hero-banner__cta">{slide.cta}</a>
                   </div>
-
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        {/* Nav dots */}
+        <div className="hero-banner__nav">
+          {SLIDES.map((_, i) => (
+            <button
+              key={i}
+              className={`hero-banner__nav-dot${i === activeIdx ? ' hero-banner__nav-dot--active' : ''}`}
+              style={i === activeIdx ? { width: '22px' } : {}}
+              onClick={() => swiperRef.current?.slideTo(i + 1)}
+              aria-label={`Slide ${i + 1}`}
+            />
+          ))}
         </div>
       </div>
     </section>
